@@ -1,0 +1,31 @@
+// Prefix
+$css-prefix                        : sh-;
+
+// Color
+$normal-color                      : #1F2E4D; // 正常字体颜色
+$unimportance-color                : #8F9BB3; // 不重要字体颜色
+$primary-color                     : #3377FF;
+$title-color                       : #1F2E4D;
+
+$success-color                     : #6CCD3C;
+$warning-color                     : #F79509;
+$error-color                       : #FF6869;
+
+$text-color                        : #515a6e;
+// Base
+$font-size-large                   : 14px;
+$font-size-base                    : 12px;
+$border-radius-base                : 3px;
+$border-radius-small               : 3px;
+
+// Background
+$base-background                   : #fff;
+
+// Z-index
+$zindex-message                    : 1010;
+$zindex-notification               : 1010;
+
+// Animation
+$animation-time                    : .3s;
+$transition-time                   : .2s;
+$ease-in-out                       : ease-in-out;

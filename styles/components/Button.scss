@@ -1,0 +1,7 @@
+@import "../custom.scss";
+
+$btn-prefix-cls: #{$css-prefix}button;
+
+.#{$btn-prefix-cls} {
+  background-color: #000;
+}
