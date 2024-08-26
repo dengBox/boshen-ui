@@ -2,18 +2,18 @@ import { oneOf } from '@/utils/assist'
 export default {
   props: {
     size: {
-      validator (value) {
+      validator (value: string) {
         return oneOf(value, ['small', 'middle', 'large'])
       },
       default: 'middle'
     },
     prefix: {
       type: String,
-      default: 'sh-'
+      default: 'bs-'
       // default: () => {
-      //   return !this?.$shui || (this.$shui?.prefix ?? '')
-      //     ? 'sh-'
-      //     : this.$shui.prefix
+      //   return !this?.$bsui || (this.$bsui?.prefix ?? '')
+      //     ? 'bs-'
+      //     : this.$bsui.prefix
       // }
     }
   },
@@ -23,17 +23,17 @@ export default {
   },
   computed: {
     sizes () {
-      return this.size || (this.$shui && this.$shui.size)
+      return this.size || (this.$bsui && this.$bsui.size)
     },
     prefixs () {
-      return this.prefix || (this.$prefix && this.$shui.prefix)
+      return this.prefix || (this.$prefix && this.$bsui.prefix)
     }
   },
   watch: {
     size (val) {
       this.sizes = val
     },
-    '$shui.size': (val) => {
+    '$bsui.size': (val) => {
       this.sizes = val.size
     }
   }
